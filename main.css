@@ -1,0 +1,176 @@
+/* body styling */
+body{
+    /* Aligns text to center */
+    text-align: center;
+    /* Adds background image */
+    background-image: url('images/background.jpg');
+    /* Sets size to auto */
+    background-size: auto;
+    /* Positions to center */
+    background-position: center;
+}
+
+/* Content class */
+.content{
+    /* Adds black translucent background */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Changes text to white */
+    color: white;
+    /* Adds padding around element */
+    padding: 10px 10px 10px 20px;
+    /* Adds margin */
+    margin: 10px;
+    /* Rounds corners */
+    border-radius: 10px;
+}
+
+/* header styling */
+header{
+    /* Changes display to flex */
+    display: flex;
+    /* Creates even spacing between elements */
+    justify-content: space-between;
+    /* Align elements to start of flex */
+    align-items: flex-start;
+}
+
+/* nav styling */
+nav{
+    /* Changes display to flex */
+    display: flex;
+    /* Creates even spacing between elements */
+    justify-content: space-between;
+}
+
+/* nav a styling */
+nav a{
+    /* Changes display to flex */
+    display: flex;
+    /* Changes display to inline */
+    display: inline;
+    /* Aligns elements to end of flex */
+    align-items: flex-end;
+    /* Adds padding */
+    padding: 15px;
+    /* Adds margin where necesarry */
+    margin: 15px 5px 0px 5px;
+    /* Removes text decorations */
+    text-decoration: none;
+    /* Changes width */
+    width: 100px;
+    /* Changes height */
+    height: 20px;
+    /* Changes color */
+    color: white;
+}
+
+/* nav a styling when hoverin */
+nav a:hover{
+    /* Changes background color */
+    background-color: white;
+    /* Changes text color */
+    color: black;
+}
+
+/* flex container class */
+.flex-container{
+    /* Changes display to flex */
+    display: flex;
+    /* Creates even spacing in between elements */
+    justify-content: space-between;
+    /* Aligns content to start of flex */
+    align-items: flex-start;
+    /* Adds padding */
+    padding: 20px;
+}
+
+/* column class */
+.column{
+    /* Assigns sizing of column */
+    flex: 1;
+    /* Adds padding */
+    padding: 20px;
+    /* Aligns text to center */
+    text-align: center;
+    /* Changes width */
+    width: 100%;
+    /* Adds border */
+    border: 1px solid white;
+    /* Rounds border edges */
+    border-radius: 10px;
+}
+
+/* Styling between columns */
+.column + .column{
+    /* Creates margin to left of column */
+    margin-left: 20px;
+}
+
+/* Styling for img in column class */
+.column img{
+    /* Changes width */
+    width: 215px;
+    /* Changes height */
+    height: 320px;
+    /* Rounds specific border edges */
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* Styling for a in column class */
+.column a{
+    /* Adds padding */
+    padding: 15px;
+    /* Removes text decoration */
+    text-decoration: none;
+    /* Changes width */
+    width: 100px;
+    /* Changes height */
+    height: 20px;
+    /* Changes text color */
+    color: white;
+}
+
+/* Styling for a in column class when hovering */
+.column a:hover{
+    /* Changes background color */
+    background-color: white;
+    /* Changes color */
+    color: black;
+}
+
+/* Styling for media adaptation */
+@media (max-width: 900px){
+    /* flex container tag */
+    .flex-container{
+        /* Sets flex direction */
+        flex-direction: column;
+        /* Aligns content to center */
+        align-items: center;
+    }
+
+    /* Styling in between columns */
+    .column + .column{
+        /* Changes margin on top */
+        margin-top: 20px;
+        /* Changes margin on left */
+        margin-left: 0;
+    }
+
+    /* header styling */
+    header{
+        /* Chages display to flex */
+        display: flex;
+        /* Changes display to block */
+        display: block;
+    }
+
+    /* nav styling */
+    nav{
+        /* Changes display to flex */
+        display: flex;
+        /* Changes display to block */
+        display: block;
+        /* Adds padding */
+        padding: 20px;
+    }
+}
